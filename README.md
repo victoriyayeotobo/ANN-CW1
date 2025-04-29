@@ -1,46 +1,26 @@
-# Glucose Level Prediction – ANN_CW1
+# Glucose Level Prediction – Baseline ANN
 
-This project focused on predicting future blood glucose levels using deep learning models.  
-It gave me hands-on experience with real-world time-series data and helped me understand how different architectures perform in healthcare prediction tasks.
+This project is an earlier stage exploration of predicting future blood glucose levels using simple ANN architectures.  
+It helped me build intuition about time-series modeling before moving on to more advanced architectures like LSTM, GRU, and CNN.
 
 ---
 
 ## Objective
 
-The goal was to build models that could forecast a patient’s blood glucose levels using only previous measurements.  
-Unlike most predictive healthcare projects that rely on many features (like insulin doses, meals, or activity), this project intentionally worked with limited inputs to simulate realistic wearable-device scenarios.
+The goal was to forecast a patient's future blood glucose readings based only on their previous measurements, working with minimal features to simulate wearable device data.
 
 ---
 
-## What I Learned
+## My Learning Focus
 
-- **Handling Time-Series Data**:  
-  I worked on cleaning medical datasets, creating input-output sequences, and managing time lags.
+- **Basic ANN Design**:  
+  Built and trained baseline neural network models for time-series prediction tasks.
   
-- **Building and Comparing Models**:  
-  I trained and compared four deep learning models:
-  - Multilayer Perceptron (MLP)
-  - Long Short-Term Memory (LSTM)
-  - Gated Recurrent Unit (GRU)
-  - 1D Convolutional Neural Network (1D CNN)
+- **Experimenting with Parameters**:  
+  Adjusted layer sizes, activation functions, and epochs to study the impact on predictions.
 
-- **Evaluating Models Properly**:  
-  I used metrics like Mean Absolute Error (MAE), Mean Squared Error (MSE), and R² Score to assess model performance — beyond just training loss.
-
-- **Critical Thinking About Machine Learning**:  
-  Through this project, I realized that success isn’t just about building more complex models.  
-  It’s about understanding the real-world problem properly — when to apply machine learning, when simpler methods might work, and how important context and data quality are.
-
-- **Realistic Limitations**:  
-  I learned that predicting glucose from short sequences is extremely difficult. In healthcare applications, richer data and domain expertise are often more critical than model complexity alone.
-
----
-
-## Key Outcomes
-
-- All models reached similar MAE values (~0.134), but had low R² scores due to the minimal input features.
-- **LSTM** and **GRU** handled sequences slightly better, but even simpler models like **MLP** and **CNN** performed competitively.
-- The project deepened my understanding of how model architecture choices interact with real-world data limitations.
+- **Learning Model Limitations**:  
+  Observed that shallow models can work but may struggle with longer sequence dependencies, leading to exploring deeper architectures in later versions.
 
 ---
 
@@ -50,22 +30,22 @@ Unlike most predictive healthcare projects that rely on many features (like insu
 - TensorFlow / Keras  
 - scikit-learn  
 - pandas, NumPy  
-- matplotlib, seaborn  
+- matplotlib  
 
 ---
 
-## How to Run the Project
+## How to Run
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/victoriyayeotobo/ANN_Code.git
-   cd ANN_Code
-   
-2. Install the required libraries:
-   pip install -r requirements.txt
+   git clone https://github.com/victoriyayeotobo/Glucose_Level_Prediction_Baseline.git
+   cd Glucose_Level_Prediction_Baseline
 
-3. Open and run the notebook:
-  ANN_Correct.ipynb using Jupyter Notebook or Google Colab.
+2. Install the dependencies:
+  pip install -r requirements.txt
 
-Note:
-This project helped me move beyond just coding models, i noticed how important it was to combine technical skills with real-world problem-solving and critical judgment.
+3. Run the notebook:
+ ANN.ipynb in Jupyter Notebook or Google Colab.
+
+Note: 
+This project helped me understand the challenges of predicting medical time-series data and set the foundation for building stronger, more advanced models later.
