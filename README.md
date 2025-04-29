@@ -49,3 +49,15 @@ The goal was to forecast a patient's future blood glucose readings based only on
 
 Note: 
 This project helped me understand the challenges of predicting medical time-series data and set the foundation for building stronger, more advanced models later.
+
+
+## Model Comparison
+
+| Aspect               | Baseline ANN Model (ANN.ipynb) | Advanced Models (ANN_Correct.ipynb) |
+|:---------------------|:-------------------------------|:------------------------------------|
+| Goal                  | Early exploration of glucose prediction with simple ANN | Improved glucose prediction with LSTM, GRU, and CNN |
+| Input Features        | Previous glucose readings only | Previous glucose readings only |
+| Architectures         | Basic feedforward ANN          | LSTM, GRU, 1D CNN, MLP |
+| Focus                 | Learning basic sequence modeling | Improving time-series forecasting with advanced architectures |
+| Performance           | Moderate MAE, low R² score     | Slightly better MAE, still low R² due to limited features |
+| Key Learning Outcome  | Importance of architecture depth and feature richness | Balancing model complexity with real-world healthcare constraints |
